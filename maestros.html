@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes activos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+<a href="index.html"></a>
+
+<div class="contenedor-grid">
+    <div class="contenedor-maestros">
+        <label for="">Seleccione su maestro</label>
+        <Select id="nombre">
+            <option value="Duarte">Adriana</option>
+            <option value="Forero">Carolina</option>
+            <option value="Baquero">Luis</option>
+            <option value="Galindo">Fernando</option>   
+            <option value="Castillo">Yaneth</option>
+            <option value="Espitia">Jonathan</option>
+            <option value="Cabrera">Tatiana</option>
+        </Select>
+        <br>
+        
+        <label for="">Seleccione el apellido de su maestro</label>
+        <Select id="apellido">
+            <option value="Baquero">Baquero</option>
+            <option value="Cabrera">Cabrera</option>
+            <option value="Castillo">Castillo</option>
+            <option value="Duarte">Duarte</option> 
+            <option value="Espitia">Espitia</option>
+            <option value="Forero">Forero</option>
+            <option value="Galindo">Galindo</option>  
+        </Select>
+        <br>
+
+        <label for="">Seleccione la materia de su maestro</label>
+        <Select id="materia">
+           <option value="Baquero">Cultura Fisica</option>
+            <option value="Cabrera">Metricas de Calidad Y Javascript</option>
+            <option value="Castillo">Gestion Ambiental</option>
+            <option value="Duarte">Implementar el Diseño FrontEnd</option> 
+            <option value="Espitia">Php Avanzado</option>
+            <option value="Forero">Realizar el seguimiento al desarrollo del proyecto</option>
+            <option value="Galindo">Desarrollar y gestionar bases de datos II</option> 
+        </Select>
+
+
+        <button id="enviarMaestro">Conocer</button>
+    </div>
+</div>
+
+    <script src="js/maestro.js"></script>
+</body>
+</html>
