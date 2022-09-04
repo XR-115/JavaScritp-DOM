@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(157,93,214);
+    background: linear-gradient(90deg, rgba(157,93,214,1) 35%, rgba(244,144,118,1) 100%);
+}
+.contenido-grid{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.palabra-form{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+.opciones-palabra{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+.juego1{
+    background-color: azure;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.juego1 input{
+    width: 250px;
+    height: 50px;
+    place-content: center;
+    border: 1px solid blue;
+}
+
+button{
+    background-color: black;
+    color: azure;
+    height: 50px;
+    width: 100%;
+    border: none;
+    padding: 2px;
+    
+    border: 4px solid rgba(110,75,164);
+    border-radius: 3px;
+
+}
+button:hover{
+    background-color: azure;
+    color: black;
+
+    
+}
