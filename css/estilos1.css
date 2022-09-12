@@ -90,7 +90,20 @@ a{
     background-color:rgba(110,75,164);
     border-radius: 5px;
 }
-
+.a{
+    background-color: rgb(73, 73, 73);
+    color: azure;
+}
+.a:hover{
+    background-color: rgb(230, 149, 0);
+    color: black;
+}
 button{
     background-color: rgb(230, 149, 0);
 }
+button:hover{
+    background-color: rgb(73, 73, 73);
+    color: azure;
+}
+
+
