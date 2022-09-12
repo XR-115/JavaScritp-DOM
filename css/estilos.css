@@ -1,14 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background: rgb(157,93,214);
     background: linear-gradient(90deg, rgba(157,93,214,1) 35%, rgba(244,144,118,1) 100%);
 }
-.contenido-grid{
-    height: 100vh;
+.contenedor-grid{
+    height: 80vh;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -22,32 +24,133 @@ body{
     row-gap: 1rem;
 }
 .juego1{
-    background-color: azure;
+    grid-column: 2/3;
+    background-color: rgb(0, 0, 0);
     padding: 1rem;
     border-radius: 5px;
 }
 .juego1 input{
-    width: 250px;
+    width: 400px;
     height: 50px;
     place-content: center;
-    border: 1px solid blue;
+    padding: 2px;
+    border: none;
 }
 
-button{
-    background-color: black;
+.boton-juego1{
+   
     color: azure;
     height: 50px;
     width: 100%;
     border: none;
     padding: 2px;
-    
-    border: 4px solid rgba(110,75,164);
+    background-color: rgb(73, 73, 73);
+    border: 1px solid rgba(110,75,164);
     border-radius: 3px;
 
 }
-button:hover{
-    background-color: azure;
+.boton-juego1:hover{
+    background-color: rgba(110,75,164);
     color: black;
 
     
+}
+/* ESTILO NAVEGADOR INICIO */
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    color: azure;
+    height: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.lista-juegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    height: 80%;
+    width: 10%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.lista-juegos:hover{
+    transition:  0.4s ease;
+    color: black;
+    background-color: rgb(230, 149, 0);
+}
+
+.bienvenida-titulo{
+    display: grid;
+    grid-template-rows: 300px 1fr ;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+    background-color: rgba(39, 39, 39, 0.411);
+    border-radius: 5px;
+    color: azure;
+    margin-top: 3.5rem;
+    margin-left: 30rem;
+    padding: 3rem;
+}
+
+.titulo-bienvenida{
+    font-size: 5rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: azure;   
+}
+
+/* --------------------------------------------ESTILO NAVEGADOR INICIO --------------------------------------------*/
+
+.contenedor-maestros{
+    grid-column: 2/3;
+    background-color: rgba(39, 39, 39, 0.7);
+    display: grid;
+    padding-top: 8rem;
+    grid-template-rows: 40px 60px 40px 60px 40px 60px 109px;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+.contenedor-maestros select{
+    height: 70%;
+    margin-bottom: 2rem;
+}
+
+
+.contenedor-maestros label{
+    color: azure;
+    font-size: 1.5rem;
+}
+
+button{
+    background-color:rgba(110,75,164);
+    color: azure;
+    border: none;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1.4rem;
+}
+button:hover{
+    transition: all 1s ease;
+    background-color: rgb(230, 149, 0);
 }

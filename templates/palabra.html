@@ -8,20 +8,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <div class="contenido-grid">
+    <nav class="contenedor-nav">
+        <div class="nav">
+            <a class="lista-juegos" href="../index.html">Inicio</a>
+            <a class="lista-juegos" href="palabra.html">Tu palabra</a>
+            <a class="lista-juegos" href="maestros.html">Quiz Maestros</a>
+            <a class="lista-juegos" href="figurasBásicas.html">Calculadora de figuras</a>
+            <a class="lista-juegos" href="temperatura.html">Conversor de temperaturas</a>
+            <a class="lista-juegos" href="triangulo.html">Tipos de triangulos</a>
+        </div>
+    </nav>
+
+    <div class="contenedor-grid">
         <div class="juego1">
          
                 <input id="palabra" type="text" placeholder="Ingrese cualquier palabra" required>
                 <br>
                 <br>
                 <div class="opciones-palabra">
-                    <button onclick="longitud()">Longitud palabra</button>
+                    <button class="boton-juego1" onclick="longitud()">Longitud palabra</button>
                   
-                    <button onclick="mayus()">Mayusculas</button>
+                    <button class="boton-juego1"onclick="mayus()">Mayusculas</button>
                   
-                    <button onclick="minus()">Minúsculas</button>
+                    <button class="boton-juego1" onclick="minus()">Minúsculas</button>
                     
-                    <button onclick="first()">Primera letrar</button>
+                    <button class="boton-juego1" onclick="first()">Primera letrar</button>
                 </div>
           
             

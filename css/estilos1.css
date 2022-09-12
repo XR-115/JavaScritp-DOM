@@ -6,3 +6,91 @@ body{
     background: rgb(157,93,214);
     background: linear-gradient(90deg, rgba(157,93,214,1) 35%, rgba(244,144,118,1) 100%);
 }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    color: azure;
+    height: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.lista-juegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    height: 80%;
+    width: 10%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.lista-juegos:hover{
+    transition:  0.4s ease;
+    color: black;
+    background-color: rgb(230, 149, 0);
+}
+
+.bienvenida-titulo{
+    display: grid;
+    grid-template-rows: 300px 1fr ;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+    background-color: rgba(39, 39, 39, 0.411);
+    border-radius: 5px;
+    color: azure;
+    margin-top: 3.5rem;
+    margin-left: 30rem;
+    padding: 3rem;
+}
+
+.titulo-bienvenida{
+    font-size: 5rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: azure;   
+}
+
+.contenedor-grid{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-figuras{
+    grid-column: 2/3;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding: 3rem;
+    border-radius: 5px;
+    
+}
+
+.fig{
+ color: azure;
+}
+
+.iniciador{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    background-color:rgba(110,75,164);
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(230, 149, 0);
+}
