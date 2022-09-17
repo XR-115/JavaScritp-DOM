@@ -157,7 +157,7 @@ button:hover{
 
 
 
-/* --------------------------------------------ESTILO NAVEGADOR grados --------------------------------------------*/
+/* --------------------------------------------ESTILO GRADOS --------------------------------------------*/
 
 .contenedor-grados{
     grid-column: 2/3;
@@ -183,3 +183,113 @@ button:hover{
     padding-left: 0.5rem;
 
 }
+
+/* -------------------------------------------- ESTILOS FORMULARIO --------------------------------------------*/
+.contenedor-grid-form{
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#contenedor-formulario{
+    margin-top: 2rem;
+    grid-column: 2/3;
+}
+.formulario-validaciones{
+    display: grid;
+    gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 90px 90px 90px 90px 40px 40px;
+    border-radius: 5px;
+    color: azure;
+    background-color: rgba(39, 39, 39, 0.9  );
+    padding: 1rem;
+    box-shadow : 4px 4px 3px #000000 ;
+   
+}
+
+.formulario-validaciones button{
+ grid-column: 1/span 2;
+}
+.formulario-validaciones .frm-no-enviado{
+    grid-column: 1/span 2;
+    place-self: center;
+}
+.formulario-validaciones h1{
+    padding-top: 1rem;
+    text-align: center;
+    grid-column: 1/span 2;
+
+}
+
+.formularios-input{
+    margin-top: 10px;
+    width: 100%;
+    min-height : 2.5rem;
+    height : 100%;
+    padding-left: 10px;
+    background-color : #FFFFFF ;
+
+    border: none;
+}
+.formularios-input:focus::placeholder{
+    color: azure;
+}
+.formularios-input:focus{
+    outline-style: none ;
+    color: azure;
+    box-shadow: 1px 4px 3px #000000 ;
+    background-color:rgb(140, 138, 143);
+}
+.btn-primary{
+    margin: 10px 10px;
+}
+.msj-error{
+    color: rgb(216, 5, 72);
+    font-size: 10px ;
+    visibility: hidden ;
+    opacity: 0 ;
+}
+.msj-error-visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+.formularios-campos-input{
+    position: relative;
+}
+.frm-icono{
+    position: absolute;
+    right: 0.5rem;
+    bottom: 2.1rem;
+    z-index: 100;
+    font-size: 20px;
+    color: #5CCDFA;
+    visibility: hidden;
+}
+
+/* MENSAJES DE LAS VALIDACIONES */
+.success .frm-icono{
+    visibility: visible;
+    color: lime;
+    opacity: 1;
+}
+.error .frm-icono{
+    visibility: visible;
+    color: rgb(216, 5, 72);
+    opacity: 1;
+}
+
+.frm-no-enviado{
+    background: rgb(223, 15, 81);
+    padding: 5px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+}
+.frm-no-enviado-activo{
+    visibility: visible;
+    opacity: 1;
+}
+

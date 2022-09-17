@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+    <nav class="contenedor-nav">
+        <div class="nav">
+            <a class="lista-juegos" href="../index.html">Inicio</a>
+            <a class="lista-juegos" href="palabra.html">Tu palabra</a>
+            <a class="lista-juegos" href="maestros.html">Quiz Maestros</a>
+            <a class="lista-juegos" href="figurasBásicas.html">Calculadora de figuras</a>
+            <a class="lista-juegos" href="temperatura.html">Conversor de temperaturas</a>
+            <a class="lista-juegos" href="triangulo.html">Tipos de triangulos</a>
+        </div>
+    </nav>
+
+    <div class="contenedor-grid-form">
+        <div id="contenedor-formulario">
+            <form action="" id="formulario-validaciones" class="formulario-validaciones">
+                <h1>FORMULARIO USUARIO</h1>
+                <div class="campos" id="g-tipoDoc">
+                    <label for="">Tipo de documento</label>
+                    <div class="formularios-campos-input">
+                        <select name="tipoDoc" id="tipoDoc" class="formularios-input">
+                            <option value="0">Seleccione su documento</option>
+                            <option value="1">Cédula de ciudadanía</option>
+                            <option value="2">Tarjeta de identidad</option>
+                            <option value="3">Cédula de extranjería</option>
+                        </select>
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Por favor seleccione una opción</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-numDoc">
+                    <label for="">Número de documento</label>
+                    <div class="formularios-campos-input">
+                        <input type="text" id="numDoc" name="numDoc" class="formularios-input"
+                            placeholder="Ingrese su documento">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Por favor ingrese un rango de número entre 5 y 10 dígitos.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-nombre">
+                    <label for="">Nombre</label>
+                    <div class="formularios-campos-input">
+                        <input type="text" name="nombre" id="nombre" class="formularios-input"
+                            placeholder="Ingrese su nombre">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Por favor ingrese cadena de texto entre 3 y 20 carácteres.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-apellido">
+                    <label for="">Apellido</label>
+                    <div class="formularios-campos-input">
+                        <input type="text" name="apellido" id="apellido" class="formularios-input"
+                            placeholder="Ingrese su apellido">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Por favor ingrese cadena de texto entre 3 y 20 carácteres.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-naci">
+                    <label for="">Fecha de nacimiento</label>
+                    <div class="formularios-campos-input">
+                        <input type="text" name="naci" id="naci" class="formularios-input">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">La fecha debe ser menor a 2004</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-email">
+                    <label for="">Email</label>
+                    <div class="formularios-campos-input">
+                        <input type="text" name="email" id="email" class="formularios-input"
+                            placeholder="Ingrese su email">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">El email debe de tener un dominio Ej:dominio@misena.com.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-pass">
+                    <label for="">Contraseña</label>
+                    <div class="formularios-campos-input">
+                        <input type="password" name="pass" id="pass" class="formularios-input"
+                            placeholder="Ingrese su contraseña">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Contener min 8 carácteres, 1 símb, 1 mayus, 1
+                            minus y 1 num.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-Pass2">
+                    <label for="">Confirmar contraseña</label>
+                    <div class="formularios-campos-input">
+                        <input type="password" name="pass2" id="pass2" class="formularios-input"
+                            placeholder="Confirme su contraseña">
+                        <i class="frm-icono fas fa-exclamation-circle"></i>
+                        <span class="msj-error">Las contraseñas no coinciden.</span>
+                    </div>
+                </div>
+                <div class="campos" id="g-terminos">
+                    <input type="checkbox" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" name="terminos" id="terminos">
+                    <label for="">Aceptar términos y condiciones</label>
+                        
+                </div>
+                <div class="frm-no-enviado" id="frm-no-enviado">
+                    <p>
+                        <i class="fas fa-exclamation-triangle"></i> 
+                        <b>Error: </b>Hay campos vacíos o incorrectos.
+                    </p>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Aceptar términos y condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sus datos serán guardados y procesados para dar una mejor sensación como usuario.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Aceptar</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/a0f1830cab.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
